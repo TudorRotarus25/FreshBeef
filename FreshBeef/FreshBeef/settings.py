@@ -25,7 +25,9 @@ SECRET_KEY = 'dhkd(2*9086r+lok@&21iaq-h96%*emc*s8$&n&5$@evw%t6@='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '46.101.90.107',
+]
 
 
 # Application definition
