@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fresh Beef</title>
+
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'lib/font-awesome.min.css' %}" />
+</head>
+<body>
+<header>
+    <div class="container top-header">
+        <div class="logo">
+            <a href="{% url 'news:homepage' %}">
+                <img src="">
+            </a>
+        </div>
+        <nav class="socialmedia-navigation">
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/tudor.rotarus" target="_blank">
+                        <i class="fa fa-2x fa-facebook" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/tudor.rotarus" target="_blank">
+                        <i class="fa fa-2x fa-twitter" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/tudor.rotarus" target="_blank">
+                        <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="pages-navigation">
+            <ul>
+                <li>
+                    <a href="{% url 'news:homepage' %}">Home</a>
+                </li>
+                <li>
+                    <a href="{% url 'news:category' %}">Category</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
