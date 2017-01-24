@@ -2,19 +2,48 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Fresh Beef</title>
+    <title>FreshBeef News</title>
 
     {% load static %}
     <link rel="stylesheet" type="text/css" href="{% static 'lib/font-awesome.min.css' %}" />
+
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}" />
 </head>
 <body>
-<header>
-    <div class="container top-header">
-        <div class="logo">
-            <a href="{% url 'news:homepage' %}">
-                <img src="">
-            </a>
+    <header>
+        <div class="container top-header">
+            <div class="content">
+                <div class="logo">
+                    <a href="{% url 'news:homepage' %}">
+                        <img src="{% static 'img/67741-200.png' %}">
+                        <div class="brand">
+                            <span>Fresh Beef News</span>
+                        </div>
+                    </a>
+                </div>
+                <div class="search">
+                    <div class="search-content">
+                        <a>
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </a>
+                        <input type="text"/>
+                    </div>
+                </div>
+                <div class="account">
+                    <div class="account-content-parent">
+                        <div class="account-content">
+                            <a type="button" href="{% url 'news:homepage' %}"><span>LOGIN</span></a>
+                            <a type="button" href="{% url 'news:homepage' %}"><span>SIGN UP</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </header>
+
+    <section class="spacer"></section>
+
+    <div class="container middle-header">
         <nav class="socialmedia-navigation">
             <ul>
                 <li>
@@ -28,7 +57,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/tudor.rotarus" target="_blank">
+                    <a href="https://www.instagram.com/tudor_rotarus/" target="_blank">
                         <i class="fa fa-2x fa-instagram" aria-hidden="true"></i>
                     </a>
                 </li>
@@ -45,8 +74,6 @@
             </ul>
         </nav>
     </div>
-    </header>
-
     <div class="container">
         {% block content %}
         {% endblock %}

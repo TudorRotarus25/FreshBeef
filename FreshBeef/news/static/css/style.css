@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+div.container {
+    display: block;
+    width: 100%;
+}
+
+div.content {
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    position: relative;
+    margin: 0 auto;
+}
+
+div.container.top-header {
+    display: block;
+    position: fixed;
+    padding: 10px 5px;
+    border-bottom: 1px solid #908c8c;
+}
+
+div.container.top-header .logo {
+    display: inline-block;
+    height: 100%;
+}
+
+div.container.top-header .logo img {
+    height: 70px;
+    width: auto;
+}
+
+div.container.top-header .logo div.brand {
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 37px;
+    margin-left: 5px;
+}
+
+div.container.top-header .search {
+    display: inline-block;
+    position: relative;
+    height: 70px;
+    width: 220px;
+    margin-left: 25px;
+}
+
+div.container.top-header .search .search-content {
+    display: inline-block;
+    position: absolute;
+    top: 56%;
+    transform: translateY(-50%);
+    border: 1px solid #908c8c;
+    border-radius: 6px;
+}
+div.container.top-header .search .search-content a {
+    padding: 6px 3px 7px 7px;
+    border-right: 1px solid #908c8c;
+    text-align: center;
+}
+
+div.container.top-header .search .search-content input {
+    width: 180px;
+    height: 30px;
+    margin-left: 6px;
+}
+
+div.container.top-header .account {
+    position: absolute;
+    top: 59%;
+    bottom: 0;
+    right: 0px;
+    text-align: right;
+    transform: translateY(-50%);
+}
+
+div.container.top-header .account a {
+    position: relative;
+    float: right;
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 5px;
+}
+
+section.spacer {
+    height: 100px;
+}
